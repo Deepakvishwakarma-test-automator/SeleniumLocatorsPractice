@@ -6,7 +6,7 @@ config = ConfigReader()
 Baseurl = config.get("Default", "BaseURL")
 Browser = config.get("Default", "Browser")
 
-@pytest.fixture
+@pytest.fixture(scope="function")
 def driver():
     if Browser.lower() == "chrome":
         driver = webdriver.Chrome()

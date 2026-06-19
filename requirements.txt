@@ -6,3 +6,6 @@ selenium==4.21.0
 
 # Pytest plugin for HTML reports
 pytest-html==4.1.1
+
+#Reporting tool
+allure-pytest==2.13.5
