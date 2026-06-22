@@ -10,3 +10,9 @@ class LandingPage:
     
     def get_title(self):
         return self.driver.title    
+    
+
+    def click_add_remove_elements_link(self):
+        add_remove_link = self.driver.find_element(*LandingPageLocators.ADD_REMOVE_ELEMENTS_PAGE_LINK)
+        add_remove_link.click()
+        
