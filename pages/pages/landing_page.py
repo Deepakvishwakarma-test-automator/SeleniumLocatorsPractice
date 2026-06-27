@@ -16,3 +16,7 @@ class LandingPage:
         add_remove_link = self.driver.find_element(*LandingPageLocators.ADD_REMOVE_ELEMENTS_PAGE_LINK)
         add_remove_link.click()
         
+    def click_context_menu_link(self):
+        context_menu_link = self.driver.find_element(*LandingPageLocators.CONTEXT_MENU_PAGE_LINK)
+        context_menu_link.click()
+        
