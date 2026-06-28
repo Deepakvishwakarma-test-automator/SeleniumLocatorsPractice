@@ -19,4 +19,10 @@ class LandingPage:
     def click_context_menu_link(self):
         context_menu_link = self.driver.find_element(*LandingPageLocators.CONTEXT_MENU_PAGE_LINK)
         context_menu_link.click()
+
+    def click_checkbox_link(self):
+        checkbox = self.driver.find_element(*LandingPageLocators.CHECK_BOXE_PAGE)
+        checkbox.click()
+
+        
         
