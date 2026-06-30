@@ -13,8 +13,13 @@ def test_check_box(driver):
     check.select_checkbox(0)
     assert check.is_checkbox_selected(0)
 
-    
+    assert check.is_checkbox_selected(1)
 
+
+    driver.back()
+    assert "The Internet" in driver.title
+    driver.forward()
+    assert check.checkbox_title()
 
 
 

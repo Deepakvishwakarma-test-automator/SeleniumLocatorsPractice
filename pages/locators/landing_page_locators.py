@@ -7,6 +7,7 @@ class LandingPageLocators:
     BASIC_AUTH_PAGE_LINK = (By.XPATH, "//a[text() = 'Basic Auth']")
     CONTEXT_MENU_PAGE_LINK = (By.XPATH, "//a[contains(text(), 'Context Menu')]")
     CHECK_BOXE_PAGE = (By.XPATH, "//a[contains(normalize-space(), 'Checkboxes')]")
-    
+    DROPDOWN_PAGE = (By.XPATH, '//a[contains(text(), 'Dropdown')]')
+
     
     
