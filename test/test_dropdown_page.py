@@ -5,6 +5,7 @@ from pages.pages.landing_page import LandingPage
 
 class TestDropdown:
 
+    @pytest.mark.smoke
     def test_select_option_by_visible_text(self, driver):
 
         lp = LandingPage(driver)
@@ -15,3 +16,4 @@ class TestDropdown:
         dropdown_page.select_by_text("Option 1")
 
         assert dropdown_page.get_selected_option() == "Option 1"
+
