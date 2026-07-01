@@ -24,7 +24,7 @@ class LandingPage:
         checkbox = self.driver.find_element(*LandingPageLocators.CHECK_BOXE_PAGE)
         checkbox.click()
 
-    def click_dropdown_link():
+    def click_dropdown_link(self):
         dropdown = self.driver.find_element(*LandingPageLocators.DROPDOWN_PAGE)
         dropdown.click()
         
